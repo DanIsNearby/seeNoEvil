@@ -1,0 +1,9 @@
+/*
+ * The modal's class names are hashed CSS-module names that change between deploys,
+ * so match it by its artwork instead. This applies before any JS runs, so there's no flash.
+ */
+aside[data-modal-id]:has(img[src*="/assets/migration/shutdown"]),
+aside[data-modal-id]:has(img[src*="/migration/abstract-tile"]),
+aside[data-see-no-evil] {
+  display: none !important;
+}

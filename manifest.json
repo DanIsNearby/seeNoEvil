@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "seeNoEvil",
+  "version": "1.0.0",
+  "description": "Hides the \"Abstract is shutting down\" modal on abs.xyz and its subdomains.",
+  "content_scripts": [
+    {
+      "matches": ["*://*.abs.xyz/*"],
+      "css": ["content.css"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ]
+}
